@@ -2,7 +2,7 @@ import { Inject, Injectable, Optional } from '@angular/core';
 import { OktaConfig, OKTA_CONFIG } from '../models/okta.config';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'platform'
 })
 export class OktaAuthConfigService {
   private config: OktaConfig | undefined;
