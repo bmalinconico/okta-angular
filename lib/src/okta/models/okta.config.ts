@@ -26,5 +26,5 @@ export interface OktaConfig {
   testing?: TestingObject;
 }
 
-export const OKTA_CONFIG = new InjectionToken<OktaConfig>('okta.config.angular', { providedIn: 'root', factory: () => ({ oktaAuth: null }) });
+export const OKTA_CONFIG = new InjectionToken<OktaConfig>('okta.config.angular', { providedIn: 'root', factory: () => ({ oktaAuth: null } as any) });
 export const OKTA_AUTH = new InjectionToken<OktaAuth>('okta.auth', { providedIn: 'root', factory: () => new OktaAuth({} as any) });
